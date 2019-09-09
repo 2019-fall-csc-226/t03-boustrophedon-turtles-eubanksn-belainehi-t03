@@ -1,17 +1,22 @@
 import turtle
 
-def make_window (name):
-    "'This creates the window.'"
 
-
-
-def main ():
+def main():
     "'This makes the square and the window."''
     wn = turtle.Screen()  # Makes a new turtle screen
-    shape = turtle.Turtle()
-    for side in range(2):
-        side.forward(100)
+    wn.bgcolor("white")
+    side = turtle.Turtle()
+    side.penup()
+    side.setpos(-200,200)
+    side.pendown()
+    side.pensize(30)
+    for i in range(2):
+        side.forward(500)
         side.right(90)
-        side.forward(100)
+        side.forward(500)
         side.right(90)
-    return
+    wn.exitonclick()
+
+
+main()
+
