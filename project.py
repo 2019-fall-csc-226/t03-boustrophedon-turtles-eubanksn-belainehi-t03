@@ -4,6 +4,7 @@ import turtle
 
 
 def boustrophedon(g):
+    "'This function fills up the square in a bustrophedon pattern.'"
     #draws the inner filings
     g.penup()
     g.setpos(-170, 170)
@@ -23,6 +24,7 @@ def boustrophedon(g):
         g.forward(5)
         g.left(90)
 def square (side):
+    "'This function draws the square. '"
     # draw square
     for i in range(2):
         side.forward(500)
@@ -31,7 +33,7 @@ def square (side):
         side.right(90)
 
 def main():
-    "'This makes the square and the window. It also draws the insides by using a second for loop."''
+    "'This is where the two functions come together. "''
     #Create a window
     wn = turtle.Screen()
     wn.bgcolor("white")
