@@ -4,10 +4,11 @@ import turtle
 
 
 def boustrophedon(g):
+    #draws the inner filings
     g.penup()
     g.setpos(-170, 170)
     g.pendown()
-    for w in range(30):
+    for w in range(45):
         g.color("yellow")
         g.speed(10)
         g.right(90)
